@@ -20,7 +20,7 @@ select * from product;
 CREATE TABLE product_status  (
 	id int auto_increment primary key,
     sale boolean, #여긴 일단 null안해놧음 sale 없을수도있으니까
-    new  boolean, #여긴 몰라서 boolean 함
+    newly  boolean, #여긴 몰라서 boolean 함
     best  boolean, #미투
     productId int
 ) engine=InnoDB default charset=utf8;
