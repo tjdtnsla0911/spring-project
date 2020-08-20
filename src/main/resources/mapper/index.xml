@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.cos.jwtex01.repository.UserRepository">
+
+
+
+
+<select id="productDto"  resultType="com.cos.jwtex01.dto.ProductDto">
+select pro.title,pro.price,pro.discounted,pst.sale,pst.best,pst.newly
+from product pro inner JOIN product_status pst
+on pro.id= pst.productId
+</select>
+
+</mapper>
